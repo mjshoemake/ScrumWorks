@@ -95,6 +95,7 @@ export class StandupComponent  {
 
   stop() {
 	  this.currentDisplay = "Not Started";
+	  this.percentage = 0;
     this.color = "status_green";
 	  this.paused = true;
   }

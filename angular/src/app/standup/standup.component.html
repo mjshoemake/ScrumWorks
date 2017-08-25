@@ -1,0 +1,31 @@
+<!-- 2 groups: "Former Managers" and "Former Employees" -->
+
+<!--
+<collapsiblePanel title="Downloads" id="downloads" collapseClass="collapse in">
+-->
+<titledPanel title="Timer">
+  <div class="{{color}}">
+    <br/>&nbsp;<br/>
+<!--
+    <input #textbox type="text" [(ngModel)]="interval"/>
+-->
+    <h1 class="text-center big-font-300">{{currentDisplay}}</h1>
+    <br/>&nbsp;<br/>
+
+  </div>
+  <br/>
+  <a (click)="start()" class="btn btn-large btn-primary">Start</a>
+  <a (click)="pause()" class="btn btn-large btn-primary">{{pauseButtonCaption}}</a>
+  <a (click)="stop()" class="btn btn-large btn-primary">Stop</a>
+  <a (click)="playSound()" class="btn btn-large btn-primary">Buzzer</a>
+  <br/>&nbsp;<br/>
+  <div class="progress">
+    <div class="progress-bar progress-bar-primary" role="progressbar" [attr.aria-valuenow]="percentage"
+         aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':percentage + '%'}">
+      {{percentage}}%
+    </div>
+  </div>
+</titledPanel>
+<!--
+</collapsiblePanel>
+-->

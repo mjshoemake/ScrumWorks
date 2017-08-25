@@ -15,7 +15,7 @@ import { LogService } from './log.service';
 @Injectable()
 export class AppComponent  {
 
-	title: string = 'MJS App!!';
+	title: string = 'ScrumWorks';
 	log: LogService;
 
 	//constructor() {

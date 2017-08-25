@@ -23,12 +23,12 @@ export class PageComponent  {
 	showBreadcrumbs: boolean = true;
 	showHint: boolean = true;
 	headerDisplay: string = 'block';
-	brandForename: string = 'Map My Shop';
+	brandForename: string = 'ScrumWorks';
 	brandSurname: string = '';
 
 	brandIcon = new BrandIcon({
-			image: 'assets/images/treasure-map2-640.png',
-			displayText: 'Map My Shop'
+			image: 'assets/images/rugby-640.png',
+			displayText: 'ScrumWorks'
 		});
 
 	navItems: NavItem[] = []

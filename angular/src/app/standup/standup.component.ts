@@ -133,11 +133,15 @@ export class StandupComponent  {
 
   playSound() {
     let a = new Audio();
-    a.src = "/scrumworks/assets/mp3/failure" + this.nextSound + ".mp3";
+    let ext = ".mp3";
+    if (this.nextSound == 5 || this.nextSound == 7 || this.nextSound == 2) {
+      ext = ".wav";
+    }
+    a.src = "/scrumworks/assets/mp3/failure" + this.nextSound + ext;
     a.load();
     a.play();
     this.nextSound++;
-    if (this.nextSound > 4) {
+    if (this.nextSound > 7) {
       this.nextSound = 1;
     }
     this.log.info('StandupService.playSound() Playing Failure Audio file #' + this.nextSound + '.');
